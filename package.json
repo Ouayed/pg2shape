@@ -1,0 +1,24 @@
+{
+  "name": "pg2shp",
+  "version": "1.0.0",
+  "description": "using pgsql2shp dumps a postgis database table, view or sql query to ESRI shape file format.",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pkg .\\package.json -o .\\output\\pg2shp.exe"
+  },
+  "pkg": {
+    "assets": [
+      ".lib/*.dll",
+      ".lib/*.exe"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "minimist": "^1.2.5",
+    "shelljs": "^0.8.4"
+  }
+}
